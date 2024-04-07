@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="./styles.css"><link>
+</head>
+
+
+
+
+
+
+
+<body>
+<div class="gridContainer"></div>
+
+
+
+
+
+<script>
+function buildGrid() {
+
+for (i = 0; i < 16; i++) {
+    const gridContainer = document.querySelector(".gridContainer");
+    const boxes = document.createElement("div");
+    
+    gridContainer.appendChild(boxes);
+    boxes.style.cssText = "border: 2px dotted black; height: 120px; width: 120px; display: flex; flex-wrap: wrap;"
+  
+    boxes.addEventListener("mouseover", () => {
+boxes.style.cssText = "background-color: green; height: 120px; width: 120px;"
+});
+
+} 
+
+} 
+
+
+buildGrid();
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
