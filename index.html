@@ -15,8 +15,12 @@
 
 
 <body>
-<div class="gridContainer"></div>
-
+<div class="buttonContainer">
+    <button class="mysteriousButton">mysterious button</button>
+</div>
+<div class="containerOfGridBox">
+    <div class="gridContainer"></div>
+</div>
 
 
 
@@ -29,10 +33,10 @@ for (i = 0; i < 16; i++) {
     const boxes = document.createElement("div");
     
     gridContainer.appendChild(boxes);
-    boxes.style.cssText = "border: 2px dotted black; height: 120px; width: 120px; display: flex; flex-wrap: wrap;"
+    boxes.style.cssText = "border: 1px dotted white; height: 120px; width: 120px; display: flex; flex-wrap: wrap;"
   
     boxes.addEventListener("mouseover", () => {
-boxes.style.cssText = "background-color: green; height: 120px; width: 120px;"
+boxes.style.cssText = "background-color: green; height: 120px; width: 120px; border: 1px dotted black;"
 });
 
 } 

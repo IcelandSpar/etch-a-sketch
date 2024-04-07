@@ -5,17 +5,42 @@
     
 }
 
-
+body {
+    background-color: black;
+}
 
 .gridContainer {
 margin-left: auto;
 margin-right: auto;
-margin-top: 20%;
-margin-bottom: 20%;
+
 max-height: 505px;
 max-width: 505px;
-border: solid black 10px;
+
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
+
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100px;
+}
+
+.mysteriousButton {
+padding: 10px 30px;
+}
+
+.containerOfGridBox {
+    display: flex;
+    
+    height: auto;
+}
+
+button {
+    border: solid rgb(104, 102, 102);
+    border-radius: 10px;
 }
