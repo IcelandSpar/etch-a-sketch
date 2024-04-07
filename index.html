@@ -33,18 +33,24 @@ for (i = 0; i < 16; i++) {
     const boxes = document.createElement("div");
     
     gridContainer.appendChild(boxes);
-    boxes.style.cssText = "border: 1px dotted white; height: 120px; width: 120px; display: flex; flex-wrap: wrap;"
+    boxes.style.cssText = "border: 1px dotted white; height: 120px; width: 120px; display: flex; flex-wrap: wrap; border-radius: 10px;"
   
     boxes.addEventListener("mouseover", () => {
-boxes.style.cssText = "background-color: green; height: 120px; width: 120px; border: 1px dotted black;"
+boxes.style.cssText = "background-color: green; height: 120px; width: 120px; border: 1px dotted black; border-radius: 10px;"
 });
 
 } 
 
-} 
-
+} ;
 
 buildGrid();
+
+const button = document.querySelector('.mysteriousButton');
+button.addEventListener('click', () => {
+    let userSquareNumber = prompt('How many squares per side would you like? \nThe max is 10.', '4')
+
+
+});
 
 
 
