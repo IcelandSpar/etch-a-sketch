@@ -12,17 +12,24 @@ body {
 .gridContainer {
     margin-left: auto;
     margin-right: auto;
-height: 800px;
-width: 800px;
-max-height: 800px;
+    height: 800px;
+    width: 800px;
+    max-height: 800px;
 
-max-width: 800px;
-border-radius: 10px;
+    max-width: 800px;
+    border-radius: 10px;
 
+    border: 1px solid gray;
 
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 
-
-
+.cellRow {
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .buttonContainer {
@@ -34,7 +41,7 @@ border-radius: 10px;
 }
 
 .mysteriousButton {
-padding: 10px 30px;
+    padding: 10px 30px;
 }
 
 .containerOfGridBox {
@@ -47,4 +54,6 @@ button {
     border: solid rgb(104, 102, 102);
     border-radius: 10px;
 }
+
+
 

@@ -1,23 +1,30 @@
-function buildGrid() {
+function buildGrid(userCellChoice) {
+let widthAndLength = 800 / userCellChoice;
+console.log(widthAndLength);
 
-    for (i = 0; i < 17; i++) {
-        const gridContainer = document.querySelector(".gridContainer");
-        const boxes = document.createElement("div");
-        
-        gridContainer.appendChild(boxes);
-        gridContainer.style.cssText="display: flex; flex-wrap: wrap; justify-content: flex-start; border: solid white;"
-        boxes.style.cssText = "display: flex; justify-content: flex-start; flex-wrap: wrap; flex-grow: 1; flex-basis: 24%; height: auto; border-radius: 10px; border: 1px dotted white;  "
-      
-        boxes.addEventListener("mouseover", () => {
-    boxes.style.cssText = "background-color: green; display: flex; justify-content: flex-start; flex-wrap: wrap; flex-grow: 1; flex-shrink: 1; align-items: stretch; border-radius: 10px; flex-basis: 24%; height: auto; border: 1px dotted black; border-radius: 10px; "
-    });
+
+
+    for (j = 0; j < userCellChoice; j++) {
+
+        for (i = 0; i < userCellChoice; i++) {
+            const gridContainer = document.querySelector('.gridContainer');
+            const cellRow = document.createElement('div');
+            gridContainer.classList.add('gridContainer');
+            cellRow.classList.add('cellRow');
+            gridContainer.appendChild(cellRow)
+            
+            cellRow.style.width = `${widthAndLength}px`;
+            cellRow.style.height = `${widthAndLength}px`;
     
-    } 
-    
-    
+        } 
+
+    }
+
+
+
+
     } ;
-    
-    
+  
     
     
     const button = document.querySelector('.mysteriousButton');
@@ -33,5 +40,5 @@ function buildGrid() {
     
     
     
-    buildGrid();
+    buildGrid(4);
     
