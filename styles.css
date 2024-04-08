@@ -10,15 +10,18 @@ body {
 }
 
 .gridContainer {
-margin-left: auto;
-margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+height: 800px;
+width: 800px;
+max-height: 800px;
 
-max-height: 505px;
-max-width: 505px;
+max-width: 800px;
+border-radius: 10px;
 
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+
+
+
 
 }
 
@@ -35,12 +38,13 @@ padding: 10px 30px;
 }
 
 .containerOfGridBox {
-    display: flex;
-    
-    height: auto;
+   
+    border: green;
+   
 }
 
 button {
     border: solid rgb(104, 102, 102);
     border-radius: 10px;
 }
+

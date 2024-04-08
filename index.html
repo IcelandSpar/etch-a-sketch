@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>Etch a Sketch</title>
     <link rel="stylesheet" href="./styles.css"><link>
+    <script src="script.js" defer></script>
 </head>
 
 
@@ -21,43 +22,6 @@
 <div class="containerOfGridBox">
     <div class="gridContainer"></div>
 </div>
-
-
-
-
-<script>
-function buildGrid() {
-
-for (i = 0; i < 16; i++) {
-    const gridContainer = document.querySelector(".gridContainer");
-    const boxes = document.createElement("div");
-    
-    gridContainer.appendChild(boxes);
-    boxes.style.cssText = "border: 1px dotted white; height: 120px; width: 120px; display: flex; flex-wrap: wrap; border-radius: 10px;"
-  
-    boxes.addEventListener("mouseover", () => {
-boxes.style.cssText = "background-color: green; height: 120px; width: 120px; border: 1px dotted black; border-radius: 10px;"
-});
-
-} 
-
-} ;
-
-buildGrid();
-
-const button = document.querySelector('.mysteriousButton');
-button.addEventListener('click', () => {
-    let userSquareNumber = prompt('How many squares per side would you like? \nThe max is 10.', '4')
-
-
-});
-
-
-
-
-
-
-</script>
 
 </body>
 
