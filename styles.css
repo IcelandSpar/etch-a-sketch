@@ -7,6 +7,7 @@
 
 body {
     background-color: black;
+    
 }
 
 .gridContainer {
@@ -19,7 +20,7 @@ body {
     max-width: 800px;
     border-radius: 10px;
 
-    border: 1px solid gray;
+    border: 7px solid gray;
 
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +28,8 @@ body {
 }
 
 .cell {
-    border: 1px solid white;
+    border: 1px solid rgba(128, 128, 128, 50%);
+    
     box-sizing: border-box;
     
 }
@@ -38,22 +40,46 @@ body {
     align-items: center;
     
     height: 100px;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    gap: 80px;
 }
 
 .mysteriousButton {
     padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(221, 220, 220);
 }
 
-.containerOfGridBox {
-   
-    border: green;
-   
-}
+
 
 button {
     border: solid rgb(104, 102, 102);
     border-radius: 10px;
 }
 
+.title {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    margin-bottom: 80px;
+}
 
+.handHeld {
+    border: 1px solid whitesmoke;
+    padding-top: 40px;
+    width: 870px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+.dials {
+    padding: 50px;
+    border-radius: 100%;
+    background-color: rgb(146, 141, 141);
+    border: 5px solid rgb(65, 65, 65);
+}
 
