@@ -26,10 +26,10 @@ body {
     
 }
 
-.cellRow {
+.cell {
     border: 1px solid white;
     box-sizing: border-box;
-    border-radius: 10px;
+    
 }
 
 .buttonContainer {
